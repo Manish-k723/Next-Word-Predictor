@@ -22,7 +22,7 @@ with open("essay.txt", "r") as file:
 
 with st.form("my_form"):
     st.title("Trained Content")
-    st.write("Kept training data for fast performance as i am not using any special resource like GPU")
+    st.write("Note: Kept training data for fast performance as i am not using any special resource like GPU")
     st.markdown(content, unsafe_allow_html=True)
     text = st.text_input("Try something")
     how_many_words = st.slider("Required words", min_value = 1, max_value = 20, value = 3)
